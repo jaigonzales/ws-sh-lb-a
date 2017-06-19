@@ -181,6 +181,8 @@ return [
          *  Socialite
          */
          Laravel\Socialite\SocialiteServiceProvider::class,
+         
+         React\ReactServiceProvider::class
     ],
 
     /*

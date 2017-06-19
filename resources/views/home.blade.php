@@ -8,7 +8,8 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
                 <div class="panel-body">
-                    Welcome to your dashboard.
+                    <div id="create-list-component"></div>
+                    <div id="shoplist-component"></div>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Shop Lab') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -19,6 +19,10 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
+    <script src="{{ asset('vendor/react-laravel/react.js') }}"></script>
+    <script src="{{ asset('vendor/react-laravel/react-dom.js') }}"></script>
+    {{-- <script src="{{ asset('js/components.js') }}"></script> --}}
+    <script src="{{ asset('vendor/react-laravel/react_ujs.js') }}"></script>
 </head>
 <body>
     <div id="app">

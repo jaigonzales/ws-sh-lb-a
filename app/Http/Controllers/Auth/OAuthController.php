@@ -20,7 +20,7 @@ class OAuthController extends Controller
      */
     public function redirectToProvider( $provider )
     {
-        return Socialite::driver($provider)->redirect();    
+        return Socialite::with($provider)->redirect();    
     }
 
     /**
@@ -35,10 +35,11 @@ class OAuthController extends Controller
      */
     public function handleProviderCallback($provider)
     {
-        $user = Socialite::driver($provider)->user();
+        $user = \Socialite::driver($provider)->user();
 
         $authUser = $this->findOrCreateUser($user, $provider);
         Auth::login($authUser, true);
+        
         return redirect($this->redirectTo);
     }
 

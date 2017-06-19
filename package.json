@@ -12,12 +12,22 @@
   "devDependencies": {
     "axios": "^0.15.3",
     "bootstrap-sass": "^3.3.7",
-    "cross-env": "^3.2.3",
+    "cross-env": "^3.2.4",
     "gulp": "^3.9.1",
     "jquery": "^3.1.1",
     "laravel-elixir": "^6.0.0-15",
+    "laravel-elixir-webpack-official": "^1.0.10",
+    "laravel-elixir-webpack-react": "^1.0.1",
     "laravel-mix": "0.*",
+    "laravel-mix-react": "^1.0.1",
     "lodash": "^4.17.4",
+    "node-sass": "^4.5.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "vue": "^2.1.10"
+  },
+  "dependencies": {
+    "react-bootstrap": "^0.30.8",
+    "velocity-react": "^1.2.1"
   }
 }
